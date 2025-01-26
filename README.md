@@ -1,13 +1,18 @@
 # fashion-finder.store
 
 Fashion Finder is a senior capstone project completed over the course of two semesters by Shannen Cawley, Eve Collier, Estella Mercado, and Kate Fedotova.
-It aims to bridge the gap between fashion and social media with an experience-oriented design aimed to engage users with inspiring fashion. You can shop
-for items on our platform with the integration of the Google Programmable Search API and interactive elements were implemented to create that social media
-aspect to our platform. Your data is securely stored and managed using phpMyAdmin and the layout and design of the UI brings it all together.
+It aims to bridge the gap between fashion and social media, with an experience-oriented design to engage users with inspiring fashion. You can shop
+for items on our platform with the integration of the Google Programmable Search API, as well as connect with others by utilizing our social media
+features, such as posting with media, liking posts, following other users, etc. Your data is securely stored and managed using phpMyAdmin and 
+the layout and design of the UI brings it all together.
+
+Future implementions could include algorithms to enhance the functionality of the feed, the ability to filter items in the shopping section, different color
+schemes to comply with ADA standards, UI elements to make the web app more cohesive, etc. There is always room for improvement and we hope to one day, advance 
+this project to the next level. 
 
 We are very excited for you to see our work all throughout 2024. Here are some visuals of our platform, we hope you enjoy!
 
-At the time I am writing this, you are able to visit our web app through the URL below, but it may be taken down in the near future. Feel free to explore on there: 
+At the time I am writing this, you are able to visit our web app through the URL below, but it may be taken down in the near future. Feel free to explore on here for now: 
 www.fashion-finder.store
 
 <img width="1609" alt="Screenshot 2025-01-25 at 10 33 33 PM" src="https://github.com/user-attachments/assets/de7946ad-0a2c-4826-a9a0-bdf89728bfe8" />
