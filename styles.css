@@ -1,0 +1,1043 @@
+ /*
+	Filename: styles.css
+	Purpose: styles page FashionFinder 
+	
+	OG colors:
+	black/navy: #00272B
+	yellow: #E0FF4F
+	orange: #FF6663
+	pink: #FF2ECC
+	darker pink: #A51080
+	*/
+	
+	*{font-family: 'Chakra Petch';}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Chakra Petch", sans-serif;
+    background-color: #FFE6E9;
+    overflow-x: hidden; /* prevent horizontal scrollbar */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* body takes at least the height of the viewport */
+    cursor: url('images/cursor.png'), auto;
+	height:100%;
+}
+
+p{font-size: clamp(1.25rem, 1.0268rem + 0.7143vw, 1.875rem);color:#000;}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.profile-details p{
+
+}
+.profile-details h2{
+
+}
+
+header {
+    color: #000;
+    background-color: #FB789D;
+    padding: 10px 0;
+    /*animation: pulse 10s infinite;*/
+}
+
+.unfollow-button{
+  background-color: #87C85A;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: #00272B;
+  cursor: url('images/cursor1.png'), auto;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  font-weight:bold;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  height: 40px;
+}
+.follow-button:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+.follow-button{
+  background-color: #87C85A;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: #00272B;
+  cursor: url('images/cursor1.png'), auto;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  font-weight:bold;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  height: 40px;
+}
+.follow-button:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #A51080;
+  }
+  70% {
+		background-color: #7C0F61;
+	}
+  100% {
+    background-color: #A51080;
+  }
+}
+
+nav ul {
+	display:flex;
+    list-style-type: none;
+    padding: 0;
+	align-items: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0px 20px 0px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+	font-weight:bold;
+	font-size: clamp(0.75rem, 0.3482rem + 1.2857vw, 1.875rem);
+    color: #000;
+}
+
+nav ul li a:hover {
+    cursor: url('images/cursor1.png'), auto;
+}
+
+.logo {
+	padding: 10px 20px;
+    width: 250px;
+    height: auto;
+}
+
+.logo-small {
+    display: none;
+}
+
+
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px;
+    color: #000;
+    background-color: #87C85A;
+    border-top: 1px solid #87C85A;
+    margin-top: auto; 
+
+}
+
+.footer > * {
+    flex:  1 100%;
+}
+
+.footer__addr {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+}
+
+.footer__logo {
+    font-family: 'Pacifico', cursive;
+    font-weight: 800;
+    text-transform: lowercase;
+    font-size: 1.5rem;
+    color: #00272B;
+}
+
+.footer__addr h2 {
+    margin-top: 1.3em;
+    font-size: 15px;
+    font-weight: 800;
+    color: #000;
+}
+
+.nav__title {
+	text-align: left;
+    font-weight: 800;
+    font-size: 15px;
+    color: #000;
+}
+
+.footer address {
+    font-style: normal;
+    color: #000;
+}
+
+.footer__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: #000;
+    border-radius: 100px;
+    color: #fff;
+    line-height: 0;
+    margin: 0.6em 0;
+    font-size: 1rem;
+    padding: 0 1.3em;
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer li {
+    line-height: 2em;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+	cursor: url('images/cursor1.png'), auto;
+}
+
+.footer ul li a: hover {
+    cursor: url('images/cursor1.png'), auto;
+}
+.footer__nav {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer__nav > * {
+    flex: 1 50%;
+    margin-right: 1.25em;
+}
+
+.nav__ul a {
+    color: #000;
+	font-weight:500;
+}
+
+.nav__ul ul li a: hover {
+    color: #000;
+    cursor: url('images/cursor1.png'), auto;
+    
+}
+
+.nav__ul--extra {
+    column-count: 2;
+    column-gap: 1.25em;
+}
+
+.legal {
+    display: flex;
+    flex-wrap: wrap;
+    color: #000;
+}
+  
+.legal__links {
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+.heart {
+    color: #000;
+}
+
+.chakra-petch-light {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.chakra-petch-regular {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.chakra-petch-medium {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.chakra-petch-semibold {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.chakra-petch-bold {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.chakra-petch-light-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.chakra-petch-regular-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.chakra-petch-medium-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.chakra-petch-semibold-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.chakra-petch-bold-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+* {box-sizing: border-box;}
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+    background-color: #00272B;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: #00272B;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: #FF2ECC;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: #A51080;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .column {
+        width: 60%;
+        margin: 0px 20px 0px 20px;
+        float: bottom;
+        }
+}
+
+.about {
+	color: #000;
+	margin:2rem;
+}
+
+.about h1{
+	font-size: clamp(1.875rem, 1.6518rem + 0.7143vw, 2.5rem);
+}
+.about h2{
+	font-size: clamp(1.5625rem, 1.3393rem + 0.7143vw, 2.1875rem);
+}
+.about h1, h2{
+	text-align: center;
+}
+
+.about h3{
+	text-align: left;
+}
+
+/* Shannen: Styling for the image and the title*/
+#image-info {
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #FF1493;
+}
+
+.image-display img {
+    max-width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains aspect ratio */
+    margin-bottom: 10px;
+}
+
+.image-display p {
+    color: #FF1493; 
+    position: relative;
+    top: 6px;
+    text-align: center;
+}
+
+/* Styling for the URL for the image */
+.image-display {
+    color: #FF1493; /* pink color for the URL text */
+    text-align: center;
+    margin-top: 6px; /* Adjust spacing as needed */
+}
+.image-display .price {
+    color: #FF1493; /* pink color for the URL text */
+    text-align: center;
+    font-size: 1.2em; /* Increase font size for the price */
+    font-weight: bold; /* Make the price bold */
+    margin-top: 10px; /* Space above the price */
+}
+
+
+/* Shannen- Changes the text of the About 9,270,000 results (0.42 seconds) so it matches the background color - hence making it disapear. We should we use this if we want a space between the filters and the search results */
+/*.gsc-result-info {
+    color: #00272B;
+} */
+
+/* This version toggles the display of the class that declares the results number - THIS WORKS :O */
+.gsc-result-info {
+    display: none;
+}
+
+.gs-imagePreviewArea{
+    background-color:#FFE6E9 !important;
+	color:#000;
+	padding-top:1rem;
+	padding-bottom:1rem;
+}
+
+.gs-imagePreview{
+    border-radius: 20px;
+    
+}
+
+.gs-imageResult .gs-image-box .gs-image {
+    border-radius: 20px;
+    min-height: 200px;
+    cursor: url('images/cursor1.png'), auto;
+	background-color:#FFE6E9 !important;
+}
+
+.gsc-webResult.gsc-result, .gsc-results .gsc-imageResult{
+	background-color:#FFE6E9 !important;
+}
+
+.gs-previewUrl{
+    visibility: hidden;
+    position: relative;
+}
+.gs-previewUrl:after {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "Bet this would look great on you!";
+}
+
+.gs-previewSize{
+    display: none !important;
+}
+
+.gs-previewLink {
+	color:#000 !important;
+	font-size: clamp(1.25rem, 1.0268rem + 0.7143vw, 1.875rem);
+}
+
+.gs-previewDescription{
+    display: none !important;
+}
+
+.gsc-tabData .gsc-tabdActive{
+    display: flex;
+}
+
+.gs-image-popup-box {
+    display: none !important;
+}
+
+.gsc-expansionArea{
+    display: inline-flex !important;
+}
+.gsc-control-cse{
+	background-color:#FFE6E9;
+	border-color:#FFE6E9;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-page {
+	background-color:#FFE6E9;
+	border-color:#FFE6E9;
+	color:#000;
+}
+/* Shannen - STYLING FOR AL THE LISTS */
+#history-container, #saved-container, #bought-container {
+    background-color: #79C942; /* Container background color */
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #fff; /* Container text color */
+    border-radius: 5px;
+}
+
+#history-container h2, #saved-container h2, #bought-container h2 a {
+    margin-top: 0;
+	text-decoration:none;
+}
+
+a:-webkit-any-link{
+    cursor: url('images/cursor1.png'), auto;
+    text-decoration: none;
+}
+
+/* List styling */
+#history-list, #saved-list, #bought-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#history-list ul li, #saved-list ul li, #bought-list ul li {
+    background-color: #00272B; /* List item background color */
+    color: #fff; /* List item text color */
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#history-list li img, #saved-list li img, #bought-list li img {
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #FF1493; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px #E0FF4F;
+}
+
+/* Shannen - Styles for save button */
+.actions button {
+    background-color: #FF6663;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    width: 150px;
+	height: 50px;
+    text-align: center;
+	text-size:40px;
+	cursor: url('images/cursor1.png'), auto;
+}
+
+.actions button:hover {
+    background-color: #FF2ECC;
+}
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  float: center;
+  border: none;
+  outline: none;
+  cursor: url('images/cursor1.png'), auto;
+  color: #000;
+  padding: 14px 16px;
+  transition: 0.3s;
+  background-color:#FFE6E9;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  color:#red;
+  background-color:#FFE6E9;
+  text-size: 30px;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  text-decoration:underline;
+  text-size: 30px;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  color:#fff;
+}
+
+/* Shannen - Styles for lists and scrolling */
+/* Container for the carousel */
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+/* Carousel styling */
+.carousel {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+    font-family: "Chakra Petch", sans-serif; /* Add font explicitly here */
+}
+
+/* Styling for each item in the carousel */
+.carousel-item {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    text-align: center;
+    font-family: "Chakra Petch", sans-serif; /* Ensure font for items */
+}
+
+/* Image styling with limits on size */
+.carousel-item img {
+    max-width: 120px;
+    max-height: 120px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Optional styling to make the carousel scrollable */
+.carousel-container::-webkit-scrollbar {
+    height: 8px; /* Set height for horizontal scrollbar */
+}
+
+.carousel-container::-webkit-scrollbar-thumb {
+    background-color: #FF6663; /* Color of the scrollbar thumb */
+    border-radius: 10px;
+}
+
+
+
+.profile-container {
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	padding: 20px;
+	color: #000;
+}
+.profile-pic {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+	margin-left: auto;
+}
+
+.feed{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content:space-around;
+}
+
+.temp{padding:2rem;}
+
+/*POSTS STYLES*/
+
+#profilePic{width:auto;height:100px;}
+.posts-left{min-width:50%;max-width:100%;}
+.posts{
+	display: flex; 
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content:space-between;
+	margin: 2rem;
+	padding: 2rem;
+	padding-bottom: 2rem;
+	color:#000;
+	border-radius:20px;
+	width: 40%;
+	height:auto;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+
+.small{display:flex; justify-content: space-between;width:100% !important;}
+.small a{text-decoration:none;}
+.posts img{max-width:100% ; height:auto; padding:1rem;}
+.posts h1{
+    text-size: 25px;
+}
+
+/* Shannen - Trying to put it back the way it was - this is for the caption and link*/
+.post-content {
+    margin-top: 1rem; /* Add spacing between elements */
+    width: 100%;
+    }
+
+/* unvisited link */
+.posts a:link {
+  color:#FF6663;
+}
+
+/* visited link */
+.posts a:visited {
+  color:#FF6663;
+}
+
+/* mouse over link */
+.posts a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+.posts a:active {
+  color:#FF6663;
+}
+
+
+
+@media screen and (min-width: 24.375em) {
+    .legal .legal__links {
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width: 40.375em) {
+    .footer__nav > * {
+        flex: 1;
+    }
+
+    .nav__item--extra {
+        flex-grow: 2;
+    }
+
+    .footer__addr {
+        flex: 1 0px;
+    }
+
+    .footer__nav {
+        flex: 2 0px;
+    }
+}
+
+.actions{
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+	justify-content:flex-end;
+	position:fixed;
+	bottom:0;
+	right:0;
+	z-index:10000000;
+}
+.actions button{margin: 2rem;}
+
+.about {
+	margin:4rem;
+}
+.about .row{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	flex-direction:row;
+	align-items:baseline;
+}
+.col{width:48%;}
+
+.column{width:40%;}
+
+
+button.unlike-button, button.unlike-button:focus{
+outline: none;
+background: transparent;
+border: 1px solid transparent;
+color:#FF2ECC;
+}
+
+button.unlike-button:active{
+outline: none;
+background: transparent;
+border: 1px solid grey;
+color:#FF2ECC;
+}
+
+
+button.like-button, button.unlike-button:focus{
+outline: none;
+background: transparent;
+border: 1px solid transparent;
+color:#FF2ECC;
+}
+
+button.like-button:active{
+outline: none;
+background: transparent;
+border: 1px solid grey;
+color:#FF2ECC;
+}
+
+@media only screen and (max-width: 1200px) {
+	.posts{width:90% !important;}
+}
+
+/* smaller screens */
+@media only screen and (max-width: 700px) {
+
+    .logo {
+        display: none;
+    }
+    .logo-small {
+        display: block;
+        width: 80px;
+        height: auto;
+		padding: 5px 5px;
+    }
+	
+	
+		
+	.about {
+		margin:2rem;
+	}
+	.col{width:90%;}
+	
+	header{
+		font-size:14px;
+		padding: 2px 0;
+	}
+	nav ul li {
+		display: inline;
+		margin: 0px 10px 0px 10px;
+	}
+	nav ul li a{
+		font-weight:medium;
+	}
+}
+
+/* Profile picture styling for posts */
+.profile-header img {
+    width: 60px; 
+    height: 60px; 
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    max-height: 100%; /* Maintain the aspect ratio */
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Crop the image to fit within the given width and height */
+}
+
+/* Modal overlay to darken the background */
+#modalOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    z-index: 999;
+}
+
+/* Modal container */
+#followModal {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    max-width: 500px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content {
+    position: relative;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    color: #fff;
+    cursor: url('images/cursor1.png'), auto;
+}
+
+#followList ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#followList li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+/* Edit Profile Modal Styles */
+#editProfileModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    max-width: 500px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content {
+    position: relative;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    color: #fff;
+    cursor: url('images/cursor1.png'), auto;
+}
+
+
+
+
+/* Modal overlay to darken the background */
+#modalOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+
+/* Create a Post Modal Styling */
+#createPostModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    max-width: 500px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    color: #fff;
+    cursor: url('images/cursor1.png'), auto;
+}
+button{
+	cursor: url('images/cursor1.png'), auto;
+}
+

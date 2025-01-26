@@ -1,0 +1,383 @@
+ /*
+	Filename: styles.scss
+	Purpose: styles page FashionFinder */
+body 
+	margin: 0 
+	padding: 0 
+	font-family: "Chakra Petch", sans-serif 
+	//color: #E0FF4F 
+	background-color: #00272B 
+	overflow-x: hidden 
+	display: flex 
+	flex-direction: column 
+	min-height: 100vh 
+	cursor: url('images/cursor.png'), auto 
+.container 
+	width: 90% 
+	margin: 0 auto 
+	overflow: hidden 
+header 
+	color: #E0FF4F 
+	background-color: #FF6663 
+	padding: 10px 0 
+	animation: pulse 10s infinite 
+@keyframes 
+	pulse 
+		0% {
+    background-color: #FF6663 
+70% 
+	background-color: #FF2ECC 
+100% 
+	background-color: #FF6663 
+} 
+	nav 
+		ul 
+			list-style-type: none 
+			padding: 0 
+	.footer 
+		display: flex 
+		flex-flow: row wrap 
+		padding: 30px 
+		color: #00272B 
+		background-color: #E0FF4F 
+		border-top: 1px solid #FF2ECC 
+		margin-top: auto 
+	@media 
+		screen 
+			and 
+				(min-width 
+					&: 
+						40 
+							&.375em) 
+								.footer__nav > * {
+        flex: 1 
+	.chakra-petch-light 
+		font-family: "Chakra Petch", sans-serif 
+		font-weight: 300 
+		font-style: normal 
+	.about 
+		color: #E0FF4F 
+nav 
+	ul 
+		li 
+			display: inline 
+			margin: 0px 20px 0px 20px 
+			a 
+				text-decoration: none 
+				color: #E0FF4F 
+				&:hover 
+					cursor: url('images/cursor1.png'), auto 
+.logo 
+	padding: 10px 20px 
+	width: 250px 
+	height: auto 
+.logo-small 
+	display: none 
+	display: block 
+	width: 100px 
+	height: auto 
+@media 
+	only 
+		screen 
+			and 
+				(max-width 
+					&: 
+						600px) 
+							.logo {
+        display: none 
+	screen 
+		and 
+			(min-width 
+				&: 
+					24 
+						&.375em) 
+							.legal .legal__links {
+        margin-left: auto 
+			(max-width 
+				&: 
+					1000px) 
+						.column {
+        width: 60% 
+						margin: 0px 20px 0px 20px 
+						float: bottom 
+.footer 
+	& > * 
+		flex: 1 100% 
+	address 
+		font-style: normal 
+		color: #666 
+	ul 
+		list-style: none 
+		padding-left: 0 
+		li 
+			a 
+				&: 
+					hover 
+						cursor: url('images/cursor1.png'), auto 
+	li 
+		line-height: 2em 
+	a 
+		text-decoration: none 
+		color: #00272B 
+.footer__addr 
+	margin-right: 1.25em 
+	margin-bottom: 2em 
+	flex: 1 0px 
+	h2 
+		margin-top: 1.3em 
+		font-size: 15px 
+		font-weight: 400 
+		color: #00272B 
+.footer__logo 
+	font-family: 'Pacifico', cursive 
+	font-weight: 400 
+	text-transform: lowercase 
+	font-size: 1.5rem 
+	color: #00272B 
+.nav__title 
+	text-align: left 
+	font-weight: 400 
+	font-size: 15px 
+	color: #00272B 
+.footer__btn 
+	display: flex 
+	align-items: center 
+	justify-content: center 
+	height: 36px 
+	max-width: max-content 
+	background-color: rgba(255, 110, 97, 0.5) 
+	border-radius: 100px 
+	color: #00272B 
+	line-height: 0 
+	margin: 0.6em 0 
+	font-size: 1rem 
+	padding: 0 1.3em 
+.footer__nav 
+	display: flex 
+	flex-flow: row wrap 
+	flex: 2 0px 
+	& > * 
+		flex: 1 50% 
+		margin-right: 1.25em 
+.nav__ul 
+	a 
+		color: #666 
+	ul 
+		li 
+			a 
+				&: 
+					hover 
+						color: #666 
+						cursor: url('images/cursor1.png'), auto 
+.nav__ul--extra 
+	column-count: 2 
+	column-gap: 1.25em 
+.legal 
+	display: flex 
+	flex-wrap: wrap 
+	color: #666 
+.legal__links 
+	display: flex 
+	align-items: center 
+	color: #666 
+.heart 
+	color: #FF2ECC 
+.nav__item--extra 
+	flex-grow: 2 
+.chakra-petch-regular 
+	font-family: "Chakra Petch", sans-serif 
+	font-weight: 400 
+	font-style: normal 
+.chakra-petch-medium 
+	font-family: "Chakra Petch", sans-serif 
+	font-weight: 500 
+	font-style: normal 
+.chakra-petch-semibold 
+	font-family: "Chakra Petch", sans-serif 
+	font-weight: 600 
+	font-style: normal 
+.chakra-petch-bold 
+	font-family: "Chakra Petch", sans-serif 
+	font-weight: 700 
+	font-style: normal 
+.chakra-petch-light-italic 
+	font-family: "Chakra Petch", sans-serif 
+	font-weight: 300 
+	font-style: italic 
+.chakra-petch-regular-italic 
+	font-family: "Chakra Petch", sans-serif 
+	font-weight: 400 
+	font-style: italic 
+.chakra-petch-medium-italic 
+	font-family: "Chakra Petch", sans-serif 
+	font-weight: 500 
+	font-style: italic 
+.chakra-petch-semibold-italic 
+	font-family: "Chakra Petch", sans-serif 
+	font-weight: 600 
+	font-style: italic 
+.chakra-petch-bold-italic 
+	font-family: "Chakra Petch", sans-serif 
+	font-weight: 700 
+	font-style: italic 
+* 
+	box-sizing: border-box 
+.open-button 
+	background-color: #00272B 
+	color: white 
+	padding: 16px 20px 
+	border: none 
+	opacity: 0.8 
+	position: fixed 
+	bottom: 23px 
+	right: 28px 
+	width: 280px 
+.form-popup 
+	display: none 
+	position: fixed 
+	bottom: 0 
+	right: 15px 
+	color: #E0FF4F 
+	border: 3px solid #E0FF4F 
+	z-index: 9 
+.form-container 
+	max-width: 300px 
+	padding: 10px 
+	background-color: #00272B 
+	.btn 
+		background-color: #FF2ECC 
+		color: white 
+		padding: 16px 20px 
+		border: none 
+		width: 100% 
+		margin-bottom: 10px 
+		opacity: 0.8 
+	.cancel 
+		background-color: #A51080 
+.form-container input[type=text], .form-container input[type=password] 
+	width: 100% 
+	padding: 15px 
+	margin: 5px 0 22px 0 
+	border: none 
+	background: #f1f1f1 
+.form-container input[type=text]:focus, .form-container input[type=password]:focus 
+	background-color: #ddd 
+	outline: none 
+.form-container .btn:hover, .open-button:hover 
+	opacity: 1 
+.column 
+	margin: 0px 5px 0px 5px 
+	//padding: 0px 0px 0px 0px 
+	float: left 
+	width: 24% 
+.row 
+	margin: 0px 40px 0px 40px 
+	&:after 
+		content: "" 
+		display: table 
+		clear: both 
+		height: 0% 
+.about h1, h2 
+	text-align: center 
+.about 
+	h3 
+		text-align: left 
+		margin: 0px 60px 0px 60px 
+#image-info 
+	padding: 20px 
+	margin-top: 20px 
+	border: 1px solid #FF1493 
+.image-display 
+	color: #FF1493 
+	text-align: center 
+	margin-top: 6px 
+	img 
+		max-width: 100% 
+		height: auto 
+		margin-bottom: 10px 
+	p 
+		color: #FF1493 
+		position: relative 
+		top: 6px 
+		text-align: center 
+	.price 
+		color: #FF1493 
+		text-align: center 
+		font-size: 1.2em 
+		font-weight: bold 
+		margin-top: 10px 
+.gsc-result-info 
+	display: none 
+.gs-imagePreviewArea 
+	background-color: #00272B 
+.gs-imagePreview 
+	border-radius: 20px 
+	border: 16px dotted #FF6663 
+.gs-imageResult 
+	.gs-image-box 
+		.gs-image 
+			border-radius: 20px 
+			min-height: 200px 
+			cursor: url('images/cursor1.png'), auto 
+.gs-previewUrl 
+	display: none !important 
+.gs-previewSize 
+	display: none !important 
+.gs-previewDescription 
+	display: none !important 
+.gsc-tabData 
+	.gsc-tabdActive 
+		display: flex 
+.gs-image-popup-box 
+	display: none !important 
+.gsc-expansionArea 
+	display: inline-flex !important 
+#history-container, #saved-container, #bought-container 
+	background-color: #FF6663 
+	padding: 10px 
+	margin-bottom: 20px 
+	color: #E0FF4F 
+	border-radius: 5px 
+#history-container h2, #saved-container h2, #bought-container h2 
+	margin-top: 0 
+#history-list, #saved-list, #bought-list 
+	list-style-type: none 
+	padding: 0 
+#history-list ul li, #saved-list ul li, #bought-list ul li 
+	background-color: #00272B 
+	color: #E0FF4F 
+	padding: 5px 
+	margin-bottom: 5px 
+	border-radius: 5px 
+#history-list li img, #saved-list li img, #bought-list li img 
+	border-radius: 5px 
+	width: 50px 
+	height: 50px 
+	vertical-align: middle 
+	margin-right: 10px 
+::-webkit-scrollbar 
+	width: 12px 
+::-webkit-scrollbar-track 
+	-webkit-box-shadow: inset 0 0 6px #FF1493 
+	border-radius: 10px 
+::-webkit-scrollbar-thumb 
+	border-radius: 10px 
+	-webkit-box-shadow: inset 0 0 6px #E0FF4F 
+#save-button 
+	background-color: #FF6663 
+	color: white 
+	padding: 10px 15px 
+	border: none 
+	border-radius: 5px 
+	cursor: pointer 
+	margin-top: 10px 
+	display: block 
+	width: 100px 
+	margin-left: auto 
+	margin-right: auto 
+	text-align: center 
+	&:hover 
+		background-color: #FF2ECC 
+#save-message 
+	text-align: center 
+	font-size: 14px 
